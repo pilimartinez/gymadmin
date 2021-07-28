@@ -1,13 +1,10 @@
 
-# 🍿 Chillflix
+# GYMADMIN
 
-A responsive web application that all shows the most popular movies from TheMovieDB's and allows you to filter by year.
+A responsive web application that all shows all the users from the Random User API.
 
 
 ## Languages and Tools:
-
-Design:
-- [Figma](https://www.figma.com/file/maRgqQp6x0qx4Xesm2uPdm/Chillflix?node-id=0%3A1)
 
 Development:
 - React.js 
@@ -21,13 +18,13 @@ Development:
 Clone the project
 
 ```bash
-  git clone https://github.com/pilimartinez/chillflix.git
+  git clone https://github.com/pilimartinez/user-app.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd chillflix
+  cd user-app
 ```
 
 Install dependencies
