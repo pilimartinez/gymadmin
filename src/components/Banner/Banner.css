@@ -1,0 +1,45 @@
+.banner-image {
+    background-image: url(./gym.jpg);
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px) grayscale(10);
+}
+
+.main-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-desc{
+    margin: 0;
+    color:#F1F1F1;
+    position: absolute;
+    font-size: 35px;
+    text-align: center;
+}
+
+.web-subtitle {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 1800px) {
+    .web-subtitle{
+        font-size: 40px;
+    }
+    .web-desc{
+        font-size: 55px;
+    }
+    .banner-image {
+        height: 500px;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .web-desc{
+        font-size: 25px;
+    }
+  }

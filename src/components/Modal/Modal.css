@@ -1,0 +1,117 @@
+.visible{
+    display: flex;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.user-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-modal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.relevant-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #194973;
+}
+
+.user-data{
+    margin: 0 0 0 2%;
+}
+
+.user-icon{
+    width: 40%;
+}
+
+.main-info{
+    display: flex;
+    width: 80%;
+}
+
+.modal-close {
+    color: #F1F1F1;
+    height: 2%;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #194973;
+    transition: 0.5s;
+}
+
+.modal-content {
+    background-color: #0A0B0D;
+    border: 3px solid #194973;
+    padding: 2%;
+    margin: 8% auto;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.invisible{
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+::-webkit-scrollbar-track {
+    background: #F1F1F1;
+  }
+::-webkit-scrollbar-thumb {
+      background: #194973;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #1f5e96;
+  }
+
+
+@media screen and (min-width: 1800px) {
+    .movie-description{
+        font-size: 20px;
+    }
+    .modal-title{
+        font-size: 30px;
+    }
+  }
+
+@media screen and (max-width: 755px) {
+    .body-modal{
+        overflow-y: scroll;
+        height: 50%;
+    }
+    .overview{
+        width: 100%;
+        height: 50%;
+    }
+  }
+
+  @media screen and (max-width: 668px) {
+    .modal-content{
+        width: 80%;
+        height: 50%;
+    }
+    .overview{
+        width: 100%;
+        height: 50%;
+    }
+  }
