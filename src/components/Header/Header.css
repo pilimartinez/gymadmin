@@ -1,12 +1,12 @@
 .header {
-    background-color: #F1F1F1;
+    background-color: #000000;
     display: flex;
     padding: 10px;
 }
 
 .company-title{
     margin: 0 5%;
-    color: #194973;
+    color: #F1F1F1;
     background-color: transparent;
     border: 0;
     cursor: pointer;}

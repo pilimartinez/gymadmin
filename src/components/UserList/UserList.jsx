@@ -9,15 +9,9 @@ function UserList() {
   const [totalPages, setTotalPages] = useState();
   const [currentUser, setCurrentUser] = useState();
   const [currentPage, setCurrentPage] = useState(1);
-  const [isModalOpen, setModal] = useState(false);
 
-  const toggleModal = () => {
-    setModal(!isModalOpen)
-  }
   const selectUser = (user) => {
     setCurrentUser(user)
-    console.log(user)
-    toggleModal()
   }
 
   const morePages = (isNext) => {
@@ -39,7 +33,7 @@ function UserList() {
         )}
         </ul>
       </section>
-      <Modal display={isModalOpen} user={currentUser} click={toggleModal} />
+      {currentUser ? <Modal user={currentUser} closeModal={() => setCurrentUser(null)}/> : ""}
       <div className="page-navigation">
         {currentPage != 1 ? <button className="page-button" onClick={() => morePages(false)}>{"< Previous"}</button> : ""}
         <p>{currentPage} of {totalPages}</p>

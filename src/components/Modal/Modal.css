@@ -10,46 +10,39 @@
     background-color: rgba(0,0,0,0.4);
 }
 
-.user-name{
-    font-size: 20px;
-    font-weight: bold;
+.overview{
+    width: 50%;
+    padding-right: 10px;
+    margin-right: 10px;
 }
 
-.modal-body{
+.header-modal {
+    width: 100%;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
 }
 
-.header-modal{
+.body-modal {
+    height: 60%;
+}
+
+.user-data, .contact {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 5px;
 }
 
-.relevant-title{
-    font-size: 20px;
-    font-weight: bold;
-    color: #194973;
-}
-
-.user-data{
-    margin: 0 0 0 2%;
-}
-
-.user-icon{
-    width: 40%;
-}
-
-.main-info{
-    display: flex;
-    width: 80%;
+.stads, .overview{
+    margin: 0;
 }
 
 .modal-close {
     color: #F1F1F1;
-    height: 2%;
     font-weight: bold;
     background-color: transparent;
     border: 0;
+    height: 2%;
     cursor: pointer;
 }
 
@@ -59,34 +52,30 @@
 }
 
 .modal-content {
-    background-color: #0A0B0D;
+    background-color: #000000;
     border: 3px solid #194973;
+    margin: 10% auto;
     padding: 2%;
-    margin: 8% auto;
+    overflow: hidden;
     border-radius: 15px;
-    width: 50%;
+    width: 30%;
 }
 
-.invisible{
-    display: none;
+.user-description{
+    display: flex;
+    height: 80%;
+    justify-content: space-between;
 }
 
-::-webkit-scrollbar {
-    width: 5px;
-  }
-::-webkit-scrollbar-track {
-    background: #F1F1F1;
-  }
-::-webkit-scrollbar-thumb {
-      background: #194973;
-  }
-::-webkit-scrollbar-thumb:hover {
-    background: #1f5e96;
-  }
-
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #194973;
+}
 
 @media screen and (min-width: 1800px) {
-    .movie-description{
+    .user-description{
         font-size: 20px;
     }
     .modal-title{
@@ -94,10 +83,10 @@
     }
   }
 
-@media screen and (max-width: 755px) {
-    .body-modal{
-        overflow-y: scroll;
-        height: 50%;
+@media screen and (max-width: 900px) {
+    .user-description{
+        flex-direction: column;
+        justify-content: space-evenly;
     }
     .overview{
         width: 100%;
@@ -105,7 +94,13 @@
     }
   }
 
-  @media screen and (max-width: 668px) {
+@media screen and (max-width: 1100px) {
+    .modal-content{
+        width: 40%;
+    }
+  }
+
+@media screen and (max-width: 668px) {
     .modal-content{
         width: 80%;
         height: 50%;
